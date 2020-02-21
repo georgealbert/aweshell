@@ -596,9 +596,9 @@ This advice can make `other-window' skip `aweshell' dedicated window."
 ;; eshell-prompt-extras
 ;; Display extra information and color for your eshell prompt.
 (require 'eshell-prompt-extras)
-(with-eval-after-load "esh-opt"
-  (setq eshell-highlight-prompt nil
-        eshell-prompt-function 'epe-theme-pipeline))
+;; (with-eval-after-load "esh-opt"
+;;   (setq eshell-highlight-prompt nil
+;;         eshell-prompt-function 'epe-theme-pipeline))
 
 ;; Validate command before post to eshell.
 (defun aweshell-validate-command ()
