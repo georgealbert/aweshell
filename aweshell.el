@@ -888,7 +888,7 @@ This function only return prefix when current point at eshell prompt line, avoid
 (add-hook 'eshell-mode-hook
           (lambda ()
             (company-mode 1)
-            (setq-local company-idle-delay 0)
+            (setq-local company-idle-delay 0.3)
             (setq-local company-backends '(aweshell-autosuggest))
             ))
 
